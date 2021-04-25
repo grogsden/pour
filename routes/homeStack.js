@@ -2,7 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack'
 import Home from '../screens/home'
 import Header from '../shared/header';
-
+import HeaderBg from '../shared/headerBg';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -19,7 +19,7 @@ export const HomeStack = ({ navigation }) => (
             component={Home}
             options={{
                 headerTitle: () => <Header navigation={navigation} title='Pour'/>,
-                
+                headerBackground: () => <HeaderBg/>
                            
             }}
         />
